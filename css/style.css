@@ -1,0 +1,80 @@
+
+:root {
+  --backgrond: #000;
+  --text-color: #FFF;
+  --button: #8257E5;
+  --border: #29292E;
+  --border-menu-mobile: #A8A8B3;
+  --text-color-menu-mobile: #E1E1E6;
+}
+
+*{
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+}
+body{
+    background: #000;
+}
+.topo{
+    width:918px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: 0 280px;
+}
+nav{
+    width:471px;
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+    font-size:14px;
+}
+button{
+    
+    background: #000;
+    border:1px solid #8257E5;
+    text-transform: uppercase;
+    width:172px;
+    height: 37px;
+    font-weight: 700;
+    border-radius: 6px;
+}
+.img-fundo1{
+    position:absolute;
+    top:0;
+    right:0;
+    height: 521px;
+    width: 521px;
+}
+.img-fundo2{
+    position:absolute;
+    bottom:0;
+    left:0;
+    height: 521px;
+    width: 521px;
+}
+main{
+    display:flex;
+    justify-content:center;
+    
+}
+.centro{
+    width:799px;
+    
+}
+.centro p{
+    text-align: center;
+    font-weight:700;
+    font-size:80px;
+    margin:0;
+}
+.centro .titulo{
+    margin-top:56px;
+}
+.centro .subtitulo{
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+    color:#000;
+}
+
