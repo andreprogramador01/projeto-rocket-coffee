@@ -22,7 +22,7 @@ body{
     display: flex;
     justify-content:space-between;
     align-items:center;
-    margin: 0 280px;
+    margin: 0 auto;
 }
 nav{
     width:471px;
