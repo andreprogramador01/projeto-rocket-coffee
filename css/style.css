@@ -30,6 +30,12 @@ body{
 .topo-mobile{
     display:none;
 }
+.topo-mobile .menu-close{
+    display:none;
+    cursor:pointer;
+    z-index: 3;
+
+}
 nav{
     width:471px;
     display: flex;
@@ -44,7 +50,7 @@ nav a{
 button{
     width:172px;
     height: 37px;
-    background: #000;
+    background-color: transparent;
     border:1px solid var(--button);
     text-transform: uppercase;
     font-weight: 700;
@@ -55,12 +61,14 @@ button{
     position:absolute;
     top:0;
     right:0;
+    z-index: -1;
    
 }
 .img-fundo2{
     position:fixed;
     bottom:0;
     left:0;
+    z-index: -1;
 } 
 main{
     display:flex;
@@ -87,9 +95,34 @@ main{
 .centro .subtitulo{
     text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
     color:#000;
+    z-index: -2;
+    position: relative;
 }
 .pegar-cafe-mobile{
     display:none;
+}
+.menu-mobile{
+    display: none;
+    
+}
+.menu-mobile ul{
+    padding:0;
+}
+.menu-mobile ul a{
+ text-decoration:none; 
+ z-index: 4;  
+}
+.menu-mobile ul li{
+    list-style-type: none;
+    padding: 20px 20px;
+    border-left: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    color: var(--text-color-menu-mobile);
+}
+
+.menu-mobile .selected{
+    border-left: 5px solid var(--button);
+    font-weight:700;
 }
 @media screen and (max-width:433px){
     .topo{
@@ -105,10 +138,15 @@ main{
         width: calc(100% - 60px);
         padding:18px 30px 25px 30px;
         border-bottom: 1px solid var(--border);
-        margin-bottom:108px;
+        
     }
-    .menu-mobile{
+    .centro{
+        padding-top: 108px;
+    }
+    .menu-open{
         width:24px;
+        cursor:pointer;
+        z-index:3;
     }
     .img-fundo1{
         display:none;
@@ -128,17 +166,9 @@ main{
     }
     .pegar-cafe-mobile{
         display:block;
+
     }
-    .pegar-cafe-mobile button{
-        cursor:pointer;
-        width:172px;
-        height: 37px;
-        background: #000;
-        border:1px solid var(--button);
-        text-transform: uppercase;
-        font-weight: 700;
-        border-radius: 6px;
-    }
+    
     .copo-cafe{
         width: 373px;
     }
