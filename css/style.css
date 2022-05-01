@@ -24,6 +24,9 @@ body{
     align-items:center;
     margin: 0 auto;
 }
+.topo .logo{
+    width: 172px;
+}
 .topo-mobile{
     display:none;
 }
@@ -100,7 +103,7 @@ main{
         display: flex;
         justify-content:space-between;
         width: calc(100% - 60px);
-        padding:0 30px;
+        padding:18px 30px 25px 30px;
         border-bottom: 1px solid var(--border);
         margin-bottom:108px;
     }
