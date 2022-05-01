@@ -1,4 +1,6 @@
-
+*{
+    margin:0;
+}
 :root {
   --backgrond: #000;
   --text-color: #FFF;
@@ -9,11 +11,11 @@
 }
 
 *{
-    color: #fff;
+    color: var(--text-color);
     font-family: 'Manrope', sans-serif;
 }
 body{
-    background: #000;
+    background-color: var(--backgrond);
 }
 .topo{
     width:918px;
@@ -32,12 +34,11 @@ nav a{
     font-size:14px;
 }
 button{
-    
-    background: #000;
-    border:1px solid #8257E5;
-    text-transform: uppercase;
     width:172px;
     height: 37px;
+    background: #000;
+    border:1px solid var(--button);
+    text-transform: uppercase;
     font-weight: 700;
     border-radius: 6px;
 }
@@ -45,16 +46,13 @@ button{
     position:absolute;
     top:0;
     right:0;
-    height: 521px;
-    width: 521px;
+   
 }
 .img-fundo2{
     position:absolute;
     bottom:0;
     left:0;
-    height: 521px;
-    width: 521px;
-}
+} 
 main{
     display:flex;
     justify-content:center;
